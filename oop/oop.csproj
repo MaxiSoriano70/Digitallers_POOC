@@ -43,9 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrativo.cs" />
+    <Compile Include="Empleado.cs" />
     <Compile Include="Estudiantes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vendedor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

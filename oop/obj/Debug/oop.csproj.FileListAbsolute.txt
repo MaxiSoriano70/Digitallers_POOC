@@ -5,3 +5,10 @@ D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\oop\oop\oop\obj\Debug\oo
 D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\oop\oop\oop\obj\Debug\oop.csproj.CoreCompileInputs.cache
 D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\oop\oop\oop\obj\Debug\oop.exe
 D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\oop\oop\oop\obj\Debug\oop.pdb
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\oop2\OOP_SOLO\oop\bin\Debug\oop.exe.config
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\oop2\OOP_SOLO\oop\bin\Debug\oop.exe
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\oop2\OOP_SOLO\oop\bin\Debug\oop.pdb
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\oop2\OOP_SOLO\oop\obj\Debug\oop.csprojAssemblyReference.cache
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\oop2\OOP_SOLO\oop\obj\Debug\oop.csproj.CoreCompileInputs.cache
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\oop2\OOP_SOLO\oop\obj\Debug\oop.exe
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\oop2\OOP_SOLO\oop\obj\Debug\oop.pdb
