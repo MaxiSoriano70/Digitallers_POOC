@@ -8,6 +8,7 @@ namespace oop
 {
     class ClaseB:ClaseA
     {
+        public ClaseC AttrC{ get; set; }//CLASE B TIENE UN CLASE C
         public string AtributoClaseB { get; set; }
         public ClaseB(string c) : base(c)
         {

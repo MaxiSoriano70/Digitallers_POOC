@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace oop
 {
-    class ClaseC
+    class ClaseC:Object
     {
+        public void imprimirMensaje()
+        {
+            Console.WriteLine("Metodo imprimir de la Clase C");
+        }
+        public override string ToString()
+        {
+            return "Metodo ToString de la Clase C";
+        }
     }
 }

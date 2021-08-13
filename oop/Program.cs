@@ -91,11 +91,21 @@ namespace oop
             SubAdministrativo s1 = new SubAdministrativo();
             Console.WriteLine(s1.metodoPadre());*/
 
-            ClaseA ca = new ClaseA(5);
+            /*ClaseA ca = new ClaseA(5);
             ClaseB cb = new ClaseB(111);
             ClaseB cb2 = new ClaseB("Cadena parámetro");
-            ClaseB cb3 = new ClaseB(5555, "Parámetroloco");
-            Console.WriteLine(cb3.imprimir());
+            ClaseB cb3 = new ClaseB(5555, "Parámetro loco");
+            Console.WriteLine(cb3.imprimir());*/
+
+            ClaseB cb = new ClaseB(6662);
+            ClaseC cc = new ClaseC();
+            cb.AttrC = cc;
+            //Console.WriteLine(cb.AttrC);
+            /*
+             *Clase C cc2=cb.AttrC;
+             *ccs.imprimirMensaje();
+             */
+            cb.AttrC.imprimirMensaje();
 
             Console.ReadLine();
         }
