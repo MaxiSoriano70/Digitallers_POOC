@@ -64,7 +64,8 @@ namespace oop
             e2.saludar();
             e2.saludar("PHP");*/
             //Console.ReadLine();
-            Administrativo a1 = new Administrativo();
+            //ADMINISTRATIVO
+            /*Administrativo a1 = new Administrativo();
             a1.Trabajar();
             a1.Nombre = "Florencio Rodriguez";
             a1.Legajo = 123;
@@ -77,7 +78,24 @@ namespace oop
             v1.Legajo = 545655;
             //v1.setSueldo=100000;
             v1.setSueldo(100000);
-            Console.WriteLine("{0}, {1}, ${2}", v1.Nombre, v1.Legajo, v1.getSueldo());
+            Console.WriteLine("{0}, {1}, ${2}", v1.Nombre, v1.Legajo, v1.getSueldo());*/
+            //VENDEDOR
+            /*Vendedor v1 = new Vendedor();
+            v1.ventas = 1000000;
+            v1.setSueldo(50000);
+            Console.WriteLine("El sueldo del vendedor es " + v1.getSueldo());*/
+
+            //SUBAMINITRATIVO
+            /*Administrativo a2 = new Administrativo();
+            Console.WriteLine(a2.metodoPadre());
+            SubAdministrativo s1 = new SubAdministrativo();
+            Console.WriteLine(s1.metodoPadre());*/
+
+            ClaseA ca = new ClaseA(5);
+            ClaseB cb = new ClaseB(111);
+            ClaseB cb2 = new ClaseB("Cadena parámetro");
+            ClaseB cb3 = new ClaseB(5555, "Parámetroloco");
+            Console.WriteLine(cb3.imprimir());
 
             Console.ReadLine();
         }

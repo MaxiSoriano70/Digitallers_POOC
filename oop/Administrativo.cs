@@ -13,5 +13,15 @@ namespace oop
         {
             Sueldo = s+bono;
         }
+        public override string metodoPadre()
+        {
+            //base.metodoPadre()=>"Hola"
+            return base.metodoPadre()+" mundo";
+        }
+        public string metodoLoco()
+        {
+            //base.metodoPadre()=>"Hola"
+            return base.metodoPadre() + " mundo";
+        }
     }
 }

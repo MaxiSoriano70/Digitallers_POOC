@@ -24,5 +24,9 @@ namespace oop
         {
             return Sueldo;
         }
+        public virtual string metodoPadre()
+        {
+            return "Hola ";
+        }
     }
 }

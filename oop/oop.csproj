@@ -44,10 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Administrativo.cs" />
+    <Compile Include="ClaseA.cs" />
+    <Compile Include="ClaseB.cs" />
+    <Compile Include="ClaseC.cs" />
     <Compile Include="Empleado.cs" />
     <Compile Include="Estudiantes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubAdministrativo.cs" />
     <Compile Include="Vendedor.cs" />
   </ItemGroup>
   <ItemGroup>
