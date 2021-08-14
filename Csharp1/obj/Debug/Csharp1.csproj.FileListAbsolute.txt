@@ -1,0 +1,10 @@
+C:\Users\cudve\Documents\EducacionIT\csharp\Fullstack%20Digitallers\Csharp1\bin\Debug\Csharp1.exe.config
+C:\Users\cudve\Documents\EducacionIT\csharp\Fullstack%20Digitallers\Csharp1\bin\Debug\Csharp1.exe
+C:\Users\cudve\Documents\EducacionIT\csharp\Fullstack%20Digitallers\Csharp1\bin\Debug\Csharp1.pdb
+C:\Users\cudve\Documents\EducacionIT\csharp\Fullstack%20Digitallers\Csharp1\obj\Debug\Csharp1.csproj.AssemblyReference.cache
+C:\Users\cudve\Documents\EducacionIT\csharp\Fullstack%20Digitallers\Csharp1\obj\Debug\Csharp1.Properties.Resources.resources
+C:\Users\cudve\Documents\EducacionIT\csharp\Fullstack%20Digitallers\Csharp1\obj\Debug\Csharp1.csproj.GenerateResource.cache
+C:\Users\cudve\Documents\EducacionIT\csharp\Fullstack%20Digitallers\Csharp1\obj\Debug\Csharp1.csproj.CoreCompileInputs.cache
+C:\Users\cudve\Documents\EducacionIT\csharp\Fullstack%20Digitallers\Csharp1\obj\Debug\Csharp1.exe
+C:\Users\cudve\Documents\EducacionIT\csharp\Fullstack%20Digitallers\Csharp1\obj\Debug\Csharp1.pdb
+C:\Users\cudve\Documents\EducacionIT\csharp\Fullstack%20Digitallers\Csharp1\obj\Debug\Csharp1.Form1.resources
