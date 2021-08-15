@@ -11,7 +11,11 @@ namespace WebForm1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Persona p = new Persona();
+            p.Nombre = "Roberto";
+            p.Apellido = "Rodriguez";
+            txt_nombre.Text = p.Nombre;
+            txt_apellido.Text = p.Apellido;
         }
     }
 }
