@@ -28,5 +28,10 @@ namespace WebForm1
             Colecciones c = new Colecciones();
             listCadenas = c.getListStrings();
         }
+        protected void obtenerPersonas()
+        {
+            Colecciones c = new Colecciones();
+            listadoPersonas = c.getPersonas();
+        }
     }
 }
