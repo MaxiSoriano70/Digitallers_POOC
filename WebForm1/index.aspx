@@ -22,7 +22,14 @@
                     <asp:TextBox ID="txt_apellido" runat="server" CssClass="form-control"/>
                 </div>
             </div>
-            <asp:Button ID="btn_enviar" CssClass="btn btn-primary mt-3" runat="server" Text="Enviar Datos"/>
+            <asp:Button ID="btn_enviar" OnClick="Form_Submit" CssClass="btn btn-primary mt-3" runat="server" Text="Enviar Datos"/>
+            <hr />
+            <p>
+                <b>Nombre</b>:<asp:Label runat="server" ID="nombre_ingresado" />
+            </p>
+            <p>
+                <b>Apellido</b>:<asp:Label runat="server" ID="apellido_ingresado" />
+            </p>
         </div>
     </form>
 </body>

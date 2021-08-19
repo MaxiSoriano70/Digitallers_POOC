@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.aspx" />
+    <Content Include="Listado_peliculas.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -77,6 +78,13 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Listado_peliculas.aspx.cs">
+      <DependentUpon>Listado_peliculas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Listado_peliculas.aspx.designer.cs">
+      <DependentUpon>Listado_peliculas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
