@@ -67,10 +67,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Colecciones_index.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="ListadoPeliculas.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Colecciones_index.aspx.cs">
+      <DependentUpon>Colecciones_index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Colecciones_index.aspx.designer.cs">
+      <DependentUpon>Colecciones_index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Colecciones.cs" />
+    <Compile Include="Estudiantes.cs" />
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -78,6 +89,16 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Instructor.cs" />
+    <Compile Include="ListadoPeliculas.aspx.cs">
+      <DependentUpon>ListadoPeliculas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListadoPeliculas.aspx.designer.cs">
+      <DependentUpon>ListadoPeliculas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Materia.cs" />
+    <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
