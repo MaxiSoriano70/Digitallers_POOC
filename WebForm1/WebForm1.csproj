@@ -68,11 +68,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Colecciones_index.aspx" />
+    <Content Include="EjemploCursos.aspx" />
     <Content Include="index.aspx" />
     <Content Include="ListadoPeliculas.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aula.cs" />
+    <Compile Include="Clase.cs" />
     <Compile Include="Colecciones_index.aspx.cs">
       <DependentUpon>Colecciones_index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -81,6 +84,14 @@
       <DependentUpon>Colecciones_index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Colecciones.cs" />
+    <Compile Include="Curso.cs" />
+    <Compile Include="EjemploCursos.aspx.cs">
+      <DependentUpon>EjemploCursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EjemploCursos.aspx.designer.cs">
+      <DependentUpon>EjemploCursos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Estudiantes.cs" />
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
