@@ -19,10 +19,12 @@ namespace WebForm1
             Estudiantes es1 = new Estudiantes("12345678","Maria", "Perez",true);
             Estudiantes es2 = new Estudiantes("1237895","Pedro", "Ramirez", true);
             Estudiantes es3 = new Estudiantes("12312354","Noelia", "Jota", true);
+            Estudiantes es4 = new Estudiantes("12317451", "Nadia", "Sosa", true);
             List<Estudiantes> estudiantes = new List<Estudiantes>();
             estudiantes.Add(es1);
             estudiantes.Add(es2);
             estudiantes.Add(es3);
+            estudiantes.Add(es4);
 
             Materia m1 = new Materia("PHP", "Programa de PHP");
             Materia m2 = new Materia("C#", "Programa de C#");
@@ -37,11 +39,14 @@ namespace WebForm1
             Clase c1 = new Clase(DateTime.Parse("8/24/2021 7:00:00 PM"), DateTime.Parse("8/24/2021 10:00:00 PM"), a1);
             Clase c2 = new Clase(DateTime.Parse("8/31/2021 7:00:00 PM"), DateTime.Parse("8/31/2021 10:00:00 PM"), a1);
             Clase c3 = new Clase(DateTime.Parse("9/7/2021 7:00:00 PM"),DateTime.Parse("9/7/2021 10:00:00 PM"),a2);
+            Clase c4 = new Clase(DateTime.Parse("14/7/2021 7:00:00 PM"), DateTime.Parse("14/7/2021 10:00:00 PM"), a2);
             List<Clase> clases = new List<Clase>();
             clases.Add(c1);
             clases.Add(c2);
             clases.Add(c3);
-            MiCurso = new Curso(estudiantes, i1, clases, m1);
+            clases.Add(c4);
+
+            MiCurso = new Curso(1,estudiantes, i1, clases, m1);
         }
     }
 }

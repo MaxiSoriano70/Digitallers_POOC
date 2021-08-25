@@ -81,6 +81,26 @@
                     <%} %>
                 </tbody>
             </table>
+            <h4>Listado de Cursos</h4>
+            <table class="table table-bordered table-success"></table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Instructor/a</th>
+                    <th>Materia</th>
+                    <th>Cantidad de Clases</th>
+                    <th>Cantidad de estudiantes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><%=MiCurso.Id_Curso.ToString() %></td>
+                    <td><%=MiCurso.Instructor.Nombre+" "+MiCurso.Instructor.Apellido %></td>
+                    <td><%=MiCurso.Materia.Nombre %></td>
+                    <td><%=MiCurso.Cantidad_Clases %></td>
+                    <td><%=MiCurso.Cantidad_Estudiantes %></td>
+                </tr>
+            </tbody>
         </div>
     </form>
 </body>
