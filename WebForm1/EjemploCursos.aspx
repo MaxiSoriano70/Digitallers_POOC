@@ -16,6 +16,7 @@
             <table class="table table-bordered">
                 <thead>
                     <tr>
+                        <th>Dni</th>
                         <th>Nombre</th>
                         <th>Apellido</th>
                     </tr>
@@ -24,9 +25,9 @@
                     <%foreach (WebForm1.Estudiantes estudiantes in MiCurso.Estudiantes)
                         {%>
                     <tr>
-                        <td>=estudiante.Dni</td>
-                        <td>=estudiante.Nombre</td>
-                        <td>=estudiante.Apellido</td>
+                        <td><%=estudiantes.Dni %></td>
+                        <td><%=estudiantes.Nombre %></td>
+                        <td><%=estudiantes.Apellido %></td>
                     </tr>
                     <%} %>
                 </tbody>
@@ -82,7 +83,7 @@
                 </tbody>
             </table>
             <h4>Listado de Cursos</h4>
-            <table class="table table-bordered table-success"></table>
+            <table class="table table-bordered table-success">
             <thead>
                 <tr>
                     <th>#</th>
@@ -101,6 +102,7 @@
                     <td><%=MiCurso.Cantidad_Estudiantes %></td>
                 </tr>
             </tbody>
+            </table>
         </div>
     </form>
 </body>

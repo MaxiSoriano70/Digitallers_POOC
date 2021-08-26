@@ -36,9 +36,9 @@ namespace WebForm1
             Aula a1 = new Aula("0010",15);
             Aula a2 = new Aula("0012",10);
 
-            Clase c1 = new Clase(DateTime.Parse("8/24/2021 7:00:00 PM"), DateTime.Parse("8/24/2021 10:00:00 PM"), a1);
-            Clase c2 = new Clase(DateTime.Parse("8/31/2021 7:00:00 PM"), DateTime.Parse("8/31/2021 10:00:00 PM"), a1);
-            Clase c3 = new Clase(DateTime.Parse("9/7/2021 7:00:00 PM"),DateTime.Parse("9/7/2021 10:00:00 PM"),a2);
+            Clase c1 = new Clase(DateTime.Parse("24/8/2021 7:00:00 PM"), DateTime.Parse("24/8/2021 10:00:00 PM"), a1);
+            Clase c2 = new Clase(DateTime.Parse("31/8/2021 7:00:00 PM"), DateTime.Parse("31/8/2021 10:00:00 PM"), a1);
+            Clase c3 = new Clase(DateTime.Parse("7/9/2021 7:00:00 PM"),DateTime.Parse("7/9/2021 10:00:00 PM"),a2);
             Clase c4 = new Clase(DateTime.Parse("14/7/2021 7:00:00 PM"), DateTime.Parse("14/7/2021 10:00:00 PM"), a2);
             List<Clase> clases = new List<Clase>();
             clases.Add(c1);
