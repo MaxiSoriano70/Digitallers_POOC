@@ -24,9 +24,9 @@
                     <%foreach (WebForm1.Estudiantes estudiantes in MiCurso.Estudiantes)
                         {%>
                     <tr>
-                        <td>=estudiante.Dni</td>
-                        <td>=estudiante.Nombre</td>
-                        <td>=estudiante.Apellido</td>
+                        <td><%=estudiantes.Dni %></td>
+                        <td><%=estudiantes.Nombre %></td>
+                        <td><%=estudiantes.Dni %></td>
                     </tr>
                     <%} %>
                 </tbody>
