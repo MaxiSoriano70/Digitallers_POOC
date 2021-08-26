@@ -11,7 +11,7 @@ namespace WebForm1
 {
 
 
-    public partial class Colecciones1
+    public partial class Ejemplo_Master
     {
     }
 }

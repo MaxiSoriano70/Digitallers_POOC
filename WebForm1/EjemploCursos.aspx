@@ -1,21 +1,15 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EjemploCursos.aspx.cs" Inherits="WebForm1.EjemploCursos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EjemploCursos.aspx.cs" Inherits="WebForm1.EjemploCursos" MasterPageFile="~/Site1.Master" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div class="container">
             <h1>Ejemplo de Curso</h1>
             <h4>Listado de Estudiantes</h4>
             <table class="table table-bordered">
                 <thead>
                     <tr>
+                        <th>Dni</th>
                         <th>Nombre</th>
                         <th>Apellido</th>
                     </tr>
@@ -24,9 +18,9 @@
                     <%foreach (WebForm1.Estudiantes estudiantes in MiCurso.Estudiantes)
                         {%>
                     <tr>
-                        <td>=estudiante.Dni</td>
-                        <td>=estudiante.Nombre</td>
-                        <td>=estudiante.Apellido</td>
+                        <td><%=estudiantes.Dni %></td>
+                        <td><%=estudiantes.Nombre %></td>
+                        <td><%=estudiantes.Apellido %></td>
                     </tr>
                     <%} %>
                 </tbody>
@@ -82,7 +76,7 @@
                 </tbody>
             </table>
             <h4>Listado de Cursos</h4>
-            <table class="table table-bordered table-success"></table>
+            <table class="table table-bordered table-success">
             <thead>
                 <tr>
                     <th>#</th>
@@ -101,7 +95,6 @@
                     <td><%=MiCurso.Cantidad_Estudiantes %></td>
                 </tr>
             </tbody>
+            </table>
         </div>
-    </form>
-</body>
-</html>
+</asp:Content>

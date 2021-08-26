@@ -69,6 +69,8 @@
   <ItemGroup>
     <Content Include="Colecciones_index.aspx" />
     <Content Include="EjemploCursos.aspx" />
+    <Content Include="Ejemplo_Master.aspx" />
+    <Content Include="Estilos\Estilos_Locos.css" />
     <Content Include="index.aspx" />
     <Content Include="ListadoPeliculas.aspx" />
     <Content Include="Web.config" />
@@ -92,6 +94,13 @@
     <Compile Include="EjemploCursos.aspx.designer.cs">
       <DependentUpon>EjemploCursos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Ejemplo_Master.aspx.cs">
+      <DependentUpon>Ejemplo_Master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ejemplo_Master.aspx.designer.cs">
+      <DependentUpon>Ejemplo_Master.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Estudiantes.cs" />
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -111,9 +120,25 @@
     <Compile Include="Materia.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Secundario.Master.cs">
+      <DependentUpon>Secundario.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secundario.Master.designer.cs">
+      <DependentUpon>Secundario.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <Content Include="Secundario.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

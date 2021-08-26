@@ -7,18 +7,17 @@ namespace WebForm1
 {
     public class Curso
     {
-        public index Id_Curso { get; set; }
+        public int Id_Curso { get; set; }
         public int Cantidad_Estudiantes {
             get
             {
                 return Estudiantes.Count;
             }    
         }
-        public int Cantidad_Clases
-        {
+        public int Cantidad_Clases{
             get
             {
-                return Cantidad_Clases;
+                return Clases.Count;
             }
         }
         public List<Estudiantes> Estudiantes { set; get; }
