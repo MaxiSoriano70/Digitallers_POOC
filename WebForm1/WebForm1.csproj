@@ -68,10 +68,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Colecciones_index.aspx" />
+    <Content Include="Destino\Otrofin.aspx" />
     <Content Include="EjemploCursos.aspx" />
     <Content Include="Ejemplo_Master.aspx" />
     <Content Include="Estilos\Estilos_Locos.css" />
+    <Content Include="Fin.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="Inicio.aspx" />
     <Content Include="ListadoPeliculas.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -87,6 +90,13 @@
     </Compile>
     <Compile Include="Colecciones.cs" />
     <Compile Include="Curso.cs" />
+    <Compile Include="Destino\Otrofin.aspx.cs">
+      <DependentUpon>Otrofin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Destino\Otrofin.aspx.designer.cs">
+      <DependentUpon>Otrofin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EjemploCursos.aspx.cs">
       <DependentUpon>EjemploCursos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -102,12 +112,26 @@
       <DependentUpon>Ejemplo_Master.aspx</DependentUpon>
     </Compile>
     <Compile Include="Estudiantes.cs" />
+    <Compile Include="Fin.aspx.cs">
+      <DependentUpon>Fin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fin.aspx.designer.cs">
+      <DependentUpon>Fin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Instructor.cs" />
     <Compile Include="ListadoPeliculas.aspx.cs">
