@@ -14,5 +14,6 @@
     <div class="mb-3">
         <asp:Button CssClass="btn btn-primary" runat="server" Text="GET" ID="btn_get" OnClick="btn_get_click" />
         <asp:Button CssClass="btn btn-secondary" runat="server" Text="POST" ID="btn_post" PostBackUrl="~/Fin.aspx"/>
+        <asp:Button CssClass="btn btn-success" runat="server" Text="Contexto" ID="btn_context" OnClick="btn_context_click"/>
     </div>
 </asp:Content>

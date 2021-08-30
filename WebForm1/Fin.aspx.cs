@@ -19,7 +19,7 @@ namespace WebForm1
                     TextBox txt_apellido_resp = null;
                     if (PreviousPage.Master.FindControl("ContentPlaceHolder1").FindControl("txt_nombre") != null)
                     {
-                        txt_apellido_resp = (TextBox)PreviousPage.Master.FindControl("ContentPlaceHolder1").FindControl("txt_nombre");
+                        txt_nombre_resp = (TextBox)PreviousPage.Master.FindControl("ContentPlaceHolder1").FindControl("txt_nombre");
                     }
                     if (PreviousPage.Master.FindControl("ContentPlaceHolder1").FindControl("txt_apellido") != null)
                     {
@@ -36,6 +36,11 @@ namespace WebForm1
             {
                 txt_nombre.Text = Request.QueryString["nombre"];
                 txt_apellido.Text = Request.QueryString["apellido"];
+            }
+            if(Context.Items["Nombre"]!= null & Context.Items["Apellido"] != null)
+            {
+                txt_nombre.Text = Context.Items["Nombre"].ToString();
+                txt_apellido.Text = Context.Items["Apellido"].ToString();
             }
         }
     }

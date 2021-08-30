@@ -19,5 +19,11 @@ namespace WebForm1
             string apellido = txt_apellido.Text;
             Response.Redirect("Fin.aspx?nombre="+nombre+"&apellido="+apellido);
         }
+        protected void btn_context_click(object sender, EventArgs e)
+        {
+            Context.Items["Nombre"] = txt_nombre.Text;
+            Context.Items["Apellido"] = txt_apellido.Text;
+            Server.Transfer("Fin.aspx");
+        }
     }
 }
