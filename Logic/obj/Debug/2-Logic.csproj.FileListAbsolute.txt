@@ -1,0 +1,11 @@
+C:\Users\cudve\Desktop\Digitallers\Capas\Logic\bin\Debug\Logic.dll
+C:\Users\cudve\Desktop\Digitallers\Capas\Logic\bin\Debug\Logic.pdb
+C:\Users\cudve\Desktop\Digitallers\Capas\Logic\obj\Debug\2-Logic.csproj.CoreCompileInputs.cache
+C:\Users\cudve\Desktop\Digitallers\Capas\Logic\obj\Debug\Logic.dll
+C:\Users\cudve\Desktop\Digitallers\Capas\Logic\obj\Debug\Logic.pdb
+C:\Users\cudve\Desktop\Digitallers\Capas\Logic\bin\Debug\3-DAO.dll
+C:\Users\cudve\Desktop\Digitallers\Capas\Logic\bin\Debug\Entities.dll
+C:\Users\cudve\Desktop\Digitallers\Capas\Logic\bin\Debug\3-DAO.pdb
+C:\Users\cudve\Desktop\Digitallers\Capas\Logic\bin\Debug\Entities.pdb
+C:\Users\cudve\Desktop\Digitallers\Capas\Logic\obj\Debug\2-Logic.csproj.AssemblyReference.cache
+C:\Users\cudve\Desktop\Digitallers\Capas\Logic\obj\Debug\2-Logic.csproj.CopyComplete
