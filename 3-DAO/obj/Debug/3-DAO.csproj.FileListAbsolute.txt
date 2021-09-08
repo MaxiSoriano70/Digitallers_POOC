@@ -1,0 +1,9 @@
+C:\Users\cudve\Desktop\Digitallers\Capas\3-DAO\bin\Debug\3-DAO.dll
+C:\Users\cudve\Desktop\Digitallers\Capas\3-DAO\bin\Debug\3-DAO.pdb
+C:\Users\cudve\Desktop\Digitallers\Capas\3-DAO\bin\Debug\Entities.dll
+C:\Users\cudve\Desktop\Digitallers\Capas\3-DAO\bin\Debug\Entities.pdb
+C:\Users\cudve\Desktop\Digitallers\Capas\3-DAO\obj\Debug\3-DAO.csproj.CoreCompileInputs.cache
+C:\Users\cudve\Desktop\Digitallers\Capas\3-DAO\obj\Debug\3-DAO.csproj.CopyComplete
+C:\Users\cudve\Desktop\Digitallers\Capas\3-DAO\obj\Debug\3-DAO.dll
+C:\Users\cudve\Desktop\Digitallers\Capas\3-DAO\obj\Debug\3-DAO.pdb
+C:\Users\cudve\Desktop\Digitallers\Capas\3-DAO\obj\Debug\3-DAO.csproj.AssemblyReference.cache

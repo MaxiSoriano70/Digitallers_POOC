@@ -1,0 +1,6 @@
+C:\Users\cudve\Desktop\Digitallers\Capas\Entities\bin\Debug\Entities.dll
+C:\Users\cudve\Desktop\Digitallers\Capas\Entities\bin\Debug\Entities.pdb
+C:\Users\cudve\Desktop\Digitallers\Capas\Entities\obj\Debug\4-Entities.csproj.AssemblyReference.cache
+C:\Users\cudve\Desktop\Digitallers\Capas\Entities\obj\Debug\4-Entities.csproj.CoreCompileInputs.cache
+C:\Users\cudve\Desktop\Digitallers\Capas\Entities\obj\Debug\Entities.dll
+C:\Users\cudve\Desktop\Digitallers\Capas\Entities\obj\Debug\Entities.pdb
