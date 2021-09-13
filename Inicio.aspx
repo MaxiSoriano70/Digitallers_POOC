@@ -12,7 +12,7 @@
     <hr />
     <h1>Listado de libros</h1>
     <% if (libros.Count > 0)
-        { %>
+                { %>
     <div class="row">
       <div class="col-sm-6">
         <div class="card">
@@ -35,7 +35,8 @@
         </div>
       </div>
     </div>
-    <% } %>
+    <% 
+            }%>
     <hr />
     <div class="alert alert-danger" role="alert">
         <asp:Label runat="server" ID="mensaje_error" />

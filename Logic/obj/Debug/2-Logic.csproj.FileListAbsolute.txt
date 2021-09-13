@@ -9,3 +9,4 @@ C:\Users\cudve\Desktop\Digitallers\Capas\Logic\bin\Debug\3-DAO.pdb
 C:\Users\cudve\Desktop\Digitallers\Capas\Logic\bin\Debug\Entities.pdb
 C:\Users\cudve\Desktop\Digitallers\Capas\Logic\obj\Debug\2-Logic.csproj.AssemblyReference.cache
 C:\Users\cudve\Desktop\Digitallers\Capas\Logic\obj\Debug\2-Logic.csproj.CopyComplete
+C:\Users\cudve\Desktop\Digitallers\Capas\Logic\bin\Debug\3-DAO.dll.config

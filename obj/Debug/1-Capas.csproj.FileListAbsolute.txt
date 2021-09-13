@@ -63,3 +63,4 @@ C:\Users\cudve\Desktop\Digitallers\Capas\bin\Logic.dll
 C:\Users\cudve\Desktop\Digitallers\Capas\bin\Logic.pdb
 C:\Users\cudve\Desktop\Digitallers\Capas\bin\3-DAO.dll
 C:\Users\cudve\Desktop\Digitallers\Capas\bin\3-DAO.pdb
+C:\Users\cudve\Desktop\Digitallers\Capas\bin\3-DAO.dll.config
