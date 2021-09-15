@@ -4,9 +4,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container contact">
+	<% if (!mensaje_error.Text.Equals("")){ %>
 	<div class="alert alert-danger" role="alert">
         <asp:Label runat="server" ID="mensaje_error" />
     </div>
+	<% } %>
 	<div class="row">
 		<div class="col-md-3">
 			<div class="contact-info">
@@ -20,7 +22,7 @@
 				<div class="form-group">
 				  <label class="control-label col-sm-2" for="fname">Título:</label>
 				  <div class="col-sm-10">          
-					<asp:TextBox type="text" cssClass="form-control" ID="txt_titulo" placeholder="Enter First Name" name="fname" runat="server" />
+					<asp:TextBox type="text" cssClass="form-control" ID="txt_titulo" placeholder="Título del Libro" name="fname" runat="server" />
 				  </div>
 				</div>
 				<div class="form-group">
@@ -38,7 +40,8 @@
 				<%--</div>--%>
 				<div class="form-group">        
 				  <div class="col-sm-offset-2 col-sm-10 mt-5">
-					<button type="submit" class="btn btn-default">Submit</button>
+					<!--<button type="submit" class="btn btn-default">Submit</button>-->
+					<asp:Button ID="btn_enviar" runat="server" Text="Enviar" OnClick="EnvioForm" />
 				  </div>
 				</div>
 			</div>

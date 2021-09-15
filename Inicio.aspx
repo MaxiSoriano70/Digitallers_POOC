@@ -14,26 +14,19 @@
     <% if (libros.Count > 0)
                 { %>
     <div class="row">
-      <div class="col-sm-6">
+        <% foreach (Entities.Libro libro in libros)
+            { %>
+      <div class="col-sm-3 mt-3">
         <div class="card">
           <img src="images/fondo d@ 3.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title"><%= libros[0].Titulo %></h5>
-            <h6 class="card-subtitle mb-2 text-muted"><%= libros[0].Autor %></h6>
-            <p class="card-text"><i>Editorial:</i><%= libros[0].Editorial %></p>
+            <h5 class="card-title"><%= libro.Titulo %></h5>
+            <h6 class="card-subtitle mb-2 text-muted"><%= libro.Autor %></h6>
+            <p class="card-text"><i>Editorial:</i><%= libro.Editorial %></p>
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <img src="images/fondo d@ 4.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"><%= libros[1].Titulo %></h5>
-            <h6 class="card-subtitle mb-2 text-muted"><%= libros[1].Autor %></h6>
-            <p class="card-text"><i>Editorial:</i><%= libros[1].Editorial %></p>
-          </div>
-        </div>
-      </div>
+        <% } %>
     </div>
     <% 
             }%>
