@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Capas.Master" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="Capas.Inicio" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="estilos/Inicio.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Libros</h1>
@@ -32,11 +33,20 @@
             }%>
     <hr />
     <div class="alert alert-danger" role="alert">
-        <asp:Label runat="server" ID="mensaje_error" />
+        <asp:Label runat="server" ID="mensaje_error" CssClass="clase_mensaje_error" />
     </div>
     <div class="alert alert-primary" role="alert">
         <asp:Label runat="server" ID="mensaje_final" />
     </div>
+    <fieldset>
+        Hola
+    </fieldset>
+    <br />
+    <button class="btn btn-secondary" id="boton_prueba_jquery">Cambiar color fondo</button>
+    <br />
+    <footer class="test_clase"></footer>
     
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/libros.js"></script>
 </asp:Content>
 
