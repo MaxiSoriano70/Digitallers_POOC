@@ -41,7 +41,7 @@
         <asp:Label runat="server" ID="mensaje_error" />
     </div>
     <div class="alert alert-primary" role="alert">
-        <asp:Label runat="server" ID="mensaje_final" />
+         <asp:Label runat="server" ID="mensaje_final" />
     </div>
     
 </asp:Content>
