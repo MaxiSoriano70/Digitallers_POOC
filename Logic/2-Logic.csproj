@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutorService.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="EditorialService.cs" />
     <Compile Include="LibroService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
