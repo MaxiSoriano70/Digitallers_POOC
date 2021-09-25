@@ -10,6 +10,7 @@ namespace _3_DAO
 {
     public class LibroDAO
     {
+        private static string StringConexion = Properties.Settings.Default.ConexionLibros;
         public static Libro getLibro()
         {
             Libro libro = new Libro();
@@ -50,6 +51,36 @@ namespace _3_DAO
                 }
             }
             
+        }
+        public static int SeveBook(Libro libro)
+        {
+            using (SqlConnection conexion = new SqlConnection(StringConexion))
+            {
+                try
+                {
+                    string query = "insert into libros(titulo,id_autor,id_editorial) values" + "(@titulo,@autor,@editorial)";
+                    SqlCommand cmb = new SqlCommand(query, conexion);
+                    //REMPLAZA
+                    SqlParameter paramTitulo = new SqlParameter("@titulo", libro.Titulo);
+                    SqlParameter paramAutor = new SqlParameter("@autor", libro.Autor);
+                    SqlParameter paramEditorial = new SqlParameter("@editorial", libro.Editorial);
+                    //AGREGA
+                    cmb.Parameters.Add(paramTitulo);
+                    cmb.Parameters.Add(paramAutor);
+                    cmb.Parameters.Add(paramEditorial);
+                    conexion.Open();
+                    //ANALIZAMOS SI SE REALIZO LA QUERY CORRECTAMENTE si inserta correctamente 1 sino 0
+                    return cmb.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    conexion.Close();
+                }
+            }
         }
     }
 }

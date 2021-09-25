@@ -15,6 +15,7 @@ namespace Capas
         {
             RellenarComboAutores();
             RellenarComboEditoriales();
+            mensaje_error.Text = "";
         }
         protected void RellenarComboAutores()
         {
@@ -25,6 +26,7 @@ namespace Capas
                 cmb_autores.DataSource = autores;
                 cmb_autores.DataTextField = "Nombre";
                 cmb_autores.DataValueField = "Id";
+                cmb_autores.SelectedValue = "Id";
                 cmb_autores.DataBind();
             }
             catch(Exception ex)
@@ -52,9 +54,26 @@ namespace Capas
                 cmb_editoriales.DataSource = editoriales;
                 cmb_editoriales.DataTextField = "Nombre";
                 cmb_editoriales.DataValueField = "Id_editorial";
+                cmb_autores.SelectedValue = "Id_editorial";
                 cmb_editoriales.DataBind();
             }
             catch(Exception ex)
+            {
+                mensaje_error.Text = ex.Message;
+            }
+        }
+        protected void EnvioForm(object sender, EventArgs e)
+        {
+            try
+            {
+                Libro libro = new Libro();
+                libro.Titulo = txt_titulo.Text.Trim();
+                libro.Editorial = cmb_editoriales.SelectedValue;
+                libro.Autor = cmb_autores.SelectedValue;
+                LibroService.NuevoLibro(libro);
+                Server.Transfer("Inicio.aspx");
+            }
+            catch(Exception ex) 
             {
                 mensaje_error.Text = ex.Message;
             }

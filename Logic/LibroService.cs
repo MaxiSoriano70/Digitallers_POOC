@@ -40,5 +40,20 @@ namespace Logic
                 throw ex;
             }
         }
+        public static int NuevoLibro(Libro libro)
+        {
+            try
+            {
+                if (libro.Titulo.Equals(""))
+                {
+                    throw new Exception("El titulo no debe quedar vacio.");
+                }
+                return LibroDAO.SeveBook(libro);
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
