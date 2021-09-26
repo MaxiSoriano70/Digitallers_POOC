@@ -72,6 +72,7 @@
     <Content Include="images\fondo d%40 4.png" />
     <Content Include="Inicio.aspx" />
     <Content Include="Nuevo.aspx" />
+    <Content Include="scripts\libros.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
