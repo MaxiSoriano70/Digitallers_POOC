@@ -67,11 +67,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="estilos\Inicio.css" />
     <Content Include="estilos\libros.css" />
     <Content Include="images\fondo d%40 3.png" />
     <Content Include="images\fondo d%40 4.png" />
     <Content Include="Inicio.aspx" />
     <Content Include="Nuevo.aspx" />
+    <Content Include="scripts\bootstrap.bundle.js" />
+    <Content Include="scripts\bootstrap.bundle.min.js" />
+    <Content Include="scripts\bootstrap.esm.js" />
+    <Content Include="scripts\bootstrap.esm.min.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <None Include="scripts\jquery-3.6.0.intellisense.js" />
+    <Content Include="scripts\jquery-3.6.0.js" />
+    <Content Include="scripts\jquery-3.6.0.min.js" />
+    <Content Include="scripts\jquery-3.6.0.slim.js" />
+    <Content Include="scripts\jquery-3.6.0.slim.min.js" />
     <Content Include="scripts\libros.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -103,6 +115,14 @@
   <ItemGroup>
     <Content Include="Capas.Master" />
     <None Include="packages.config" />
+    <Content Include="scripts\bootstrap.bundle.js.map" />
+    <Content Include="scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="scripts\bootstrap.esm.js.map" />
+    <Content Include="scripts\bootstrap.esm.min.js.map" />
+    <Content Include="scripts\bootstrap.js.map" />
+    <Content Include="scripts\bootstrap.min.js.map" />
+    <Content Include="scripts\jquery-3.6.0.min.map" />
+    <Content Include="scripts\jquery-3.6.0.slim.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -36,3 +36,13 @@ D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\03. Nuevo_Libro\OOP_SOLO
 D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\03. Nuevo_Libro\OOP_SOLO\3-DAO\obj\Debug\3-DAO.csproj.CopyComplete
 D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\03. Nuevo_Libro\OOP_SOLO\3-DAO\obj\Debug\3-DAO.dll
 D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\03. Nuevo_Libro\OOP_SOLO\3-DAO\obj\Debug\3-DAO.pdb
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\04. Introccion_Jquery\OOP_SOLO\3-DAO\bin\Debug\3-DAO.dll.config
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\04. Introccion_Jquery\OOP_SOLO\3-DAO\bin\Debug\3-DAO.dll
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\04. Introccion_Jquery\OOP_SOLO\3-DAO\bin\Debug\3-DAO.pdb
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\04. Introccion_Jquery\OOP_SOLO\3-DAO\bin\Debug\Entities.dll
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\04. Introccion_Jquery\OOP_SOLO\3-DAO\bin\Debug\Entities.pdb
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\04. Introccion_Jquery\OOP_SOLO\3-DAO\obj\Debug\3-DAO.csproj.AssemblyReference.cache
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\04. Introccion_Jquery\OOP_SOLO\3-DAO\obj\Debug\3-DAO.csproj.CoreCompileInputs.cache
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\04. Introccion_Jquery\OOP_SOLO\3-DAO\obj\Debug\3-DAO.csproj.CopyComplete
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\04. Introccion_Jquery\OOP_SOLO\3-DAO\obj\Debug\3-DAO.dll
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\04. Introccion_Jquery\OOP_SOLO\3-DAO\obj\Debug\3-DAO.pdb
