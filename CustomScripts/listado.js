@@ -45,6 +45,7 @@ function mostrarModal() {
 }
 function cargarCamposModal() {
     cargarAutoresModal();
+    cargarEditorialesModal();
 }
 function cargarAutoresModal() {
     $.ajax({
@@ -58,9 +59,29 @@ function cargarAutoresModal() {
         .fail(setearError)
 }
 function cargarComboAutores(response) {
+    $("#select_autor").html("");
     $.each(response.d, function (key, value) {
         $("#select_autor").append(
             "<option value='" + value.Id + "'>" + value.Nombre + "</option>"
+        )
+    })
+}
+function cargarEditorialesModal() {
+    $.ajax({
+        type: 'GET',
+        url: 'ListadoAjax.aspx/ObtenerEditoriales',
+        data: {},
+        contentType: 'application/json',
+        dataType: 'json'
+    })
+        .done(cargarComboEditoriales)
+        .fail(setearError)
+}
+function cargarComboEditoriales(response) {
+    $("#select_editorial").html("");
+    $.each(response.d, function (key, value) {
+        $("#select_editorial").append(
+            "<option value='" + value.Id_editorial + "'>" + value.Nombre + "</option>"
         )
     })
 }

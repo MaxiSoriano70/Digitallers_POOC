@@ -32,5 +32,10 @@ namespace Capas
         {
             return AutorService.GetAutores();
         }
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = true)]
+        public static List<Editorial> ObtenerEditoriales()
+        {
+            return EditorialService.ObtenerEditoriales();
+        }
     }
 }

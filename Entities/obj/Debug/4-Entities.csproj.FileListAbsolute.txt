@@ -22,3 +22,9 @@ D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\05. Jquery\OOP_SOLO\Enti
 D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\05. Jquery\OOP_SOLO\Entities\obj\Debug\4-Entities.csproj.CoreCompileInputs.cache
 D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\05. Jquery\OOP_SOLO\Entities\obj\Debug\Entities.dll
 D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\05. Jquery\OOP_SOLO\Entities\obj\Debug\Entities.pdb
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\06. Jquery y Ajax\OOP_SOLO\Entities\bin\Debug\Entities.dll
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\06. Jquery y Ajax\OOP_SOLO\Entities\bin\Debug\Entities.pdb
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\06. Jquery y Ajax\OOP_SOLO\Entities\obj\Debug\4-Entities.csproj.AssemblyReference.cache
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\06. Jquery y Ajax\OOP_SOLO\Entities\obj\Debug\4-Entities.csproj.CoreCompileInputs.cache
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\06. Jquery y Ajax\OOP_SOLO\Entities\obj\Debug\Entities.dll
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\06. Jquery y Ajax\OOP_SOLO\Entities\obj\Debug\Entities.pdb
