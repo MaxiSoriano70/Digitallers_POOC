@@ -56,3 +56,15 @@ D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\04. Introccion_Jquery\OO
 D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\04. Introccion_Jquery\OOP_SOLO\Logic\obj\Debug\2-Logic.csproj.CopyComplete
 D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\04. Introccion_Jquery\OOP_SOLO\Logic\obj\Debug\Logic.dll
 D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\04. Introccion_Jquery\OOP_SOLO\Logic\obj\Debug\Logic.pdb
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\05. Jquery\OOP_SOLO\Logic\bin\Debug\Logic.dll
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\05. Jquery\OOP_SOLO\Logic\bin\Debug\Logic.pdb
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\05. Jquery\OOP_SOLO\Logic\bin\Debug\3-DAO.dll
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\05. Jquery\OOP_SOLO\Logic\bin\Debug\Entities.dll
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\05. Jquery\OOP_SOLO\Logic\bin\Debug\3-DAO.pdb
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\05. Jquery\OOP_SOLO\Logic\bin\Debug\3-DAO.dll.config
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\05. Jquery\OOP_SOLO\Logic\bin\Debug\Entities.pdb
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\05. Jquery\OOP_SOLO\Logic\obj\Debug\2-Logic.csproj.AssemblyReference.cache
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\05. Jquery\OOP_SOLO\Logic\obj\Debug\2-Logic.csproj.CoreCompileInputs.cache
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\05. Jquery\OOP_SOLO\Logic\obj\Debug\2-Logic.csproj.CopyComplete
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\05. Jquery\OOP_SOLO\Logic\obj\Debug\Logic.dll
+D:\Cursos\En curso\Educacion IT\Digitalers\.CSHARP_SOLO\05. Jquery\OOP_SOLO\Logic\obj\Debug\Logic.pdb
