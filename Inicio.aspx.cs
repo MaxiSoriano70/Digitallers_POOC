@@ -19,9 +19,9 @@ namespace Capas
         protected void Page_Load(object sender, EventArgs e)
         {
             //LibroService libroService = new LibroService();
-            Libro libro = LibroService.ObtenerLibro();
+            /*Libro libro = LibroService.ObtenerLibro();
             lb_titulo.Text = libro.Titulo;
-            lb_editorial.Text = libro.Editorial;
+            lb_editorial.Text = libro.Editorial.Nombre;*/
             ListarLibros();
             //capturaError();
         }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 using Entities;
 using System.Data.SqlClient;
 
@@ -11,19 +12,25 @@ namespace _3_DAO
     public class AutorDAO
     {
         private static string StringConexion = Properties.Settings.Default.ConexionLibros;
-        private static SqlConnection objConexion=null;
+        
+        
+        
+        private static SqlConnection objConexion = null;
+        
+        
+        
+        
         public static List<Autor> ObtenerAutores()
         {
             List<Autor> autores = new List<Autor>();
             try
             {
                 objConexion = new SqlConnection(StringConexion);
-            }
-            catch(Exception ex)
+            }catch(Exception ex)
             {
-                throw new Exception("Se ha producido un error en la conexion" + Environment.NewLine + ex.Message);
+                throw new Exception("Se ha producido un error en la conexión" + Environment.NewLine + ex.Message);
             }
-            SqlCommand objCommand = new SqlCommand("Select id_autor,nombre from autores",objConexion);
+            SqlCommand objCommand = new SqlCommand("select id_autor,nombre from autores", objConexion);
             SqlDataReader objReader = null;
             try
             {
@@ -37,10 +44,9 @@ namespace _3_DAO
                     autores.Add(autor);
                 }
                 return autores;
-            }
-            catch (Exception ex)
+            }catch(Exception ex)
             {
-                throw new Exception("Se a producido un error en la tabla autores" + Environment.NewLine + ex.Message);
+                throw new Exception("Se ha producido un error en la tabla autores." + Environment.NewLine + ex.Message);
             }
             finally
             {

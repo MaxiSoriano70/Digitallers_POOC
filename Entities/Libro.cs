@@ -11,7 +11,21 @@ namespace Entities
     {
         public int Id { get; set; }
         public string Titulo { get; set; }
-        public string Editorial { get; set; }
-        public string Autor { get; set; }
+        /*public Editorial Editorial { get; set; }
+        public Autor Autor { get; set; }*/
+        public Editorial Editorial { get; set; }
+        public Autor Autor { get; set; }
+
+
+        public void setAutor(Autor autor_param)
+        {
+            Autor = autor_param;
+        }
+
+        public void setEditorial(Editorial editorial_param)
+        {
+            Editorial = editorial_param;
+        }
+
     }
 }

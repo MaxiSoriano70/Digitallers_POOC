@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Entities;
 using _3_DAO;
-
 namespace Logic
 {
     public class EditorialService
@@ -15,8 +14,7 @@ namespace Logic
             try
             {
                 return EditorialDAO.ObtenerEditoriales();
-            }
-            catch (Exception ex ) 
+            }catch(Exception ex)
             {
                 throw ex;
             }

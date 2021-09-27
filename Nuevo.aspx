@@ -37,6 +37,7 @@
 					<asp:DropDownList CssClass="form-control" ID="cmb_editoriales" runat="server" />
 				  </div>
 				</div>
+				<%--</div>--%>
 				<div class="form-group">        
 				  <div class="col-sm-offset-2 col-sm-10 mt-5">
 					<!--<button type="submit" class="btn btn-default">Submit</button>-->
@@ -47,4 +48,5 @@
 		</div>
 	</div>
 </div>
+
 </asp:Content>

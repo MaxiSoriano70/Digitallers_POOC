@@ -40,17 +40,36 @@ namespace Logic
                 throw ex;
             }
         }
+
+
+        /*
+         * string cadena1 = "Hola";
+         * string cadena2 = "hola";
+         * if(cadena1 == cadena2) => No para strings
+         * if(cadena1.equals(cadena2)) => Esto es correcto
+         * if(cadena2.equals(cadena1)) => Esto es correcto
+         */
         public static int NuevoLibro(Libro libro)
         {
             try
             {
                 if (libro.Titulo.Equals(""))
                 {
-                    throw new Exception("El titulo no debe quedar vacio.");
+                    throw new Exception("El título no debe quedar vacío");
                 }
-                return LibroDAO.SeveBook(libro);
+                return LibroDAO.SaveBook(libro);
+            }catch(Exception ex)
+            {
+                throw ex;
             }
-            catch(Exception ex)
+        }
+
+        public static Libro GetLibroPorId(int id_libro)
+        {
+            try
+            {
+                return LibroDAO.GetLibroPorId(id_libro);
+            }catch(Exception ex)
             {
                 throw ex;
             }

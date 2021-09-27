@@ -5,7 +5,6 @@ using System.Web;
 using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Web.Compilation;
 using Entities;
 using Logic;
 using System.Web.Services;
@@ -20,22 +19,40 @@ namespace Capas
         {
 
         }
-        [WebMethod,ScriptMethod(ResponseFormat=ResponseFormat.Json,UseHttpGet=true)]
+
+        [WebMethod, ScriptMethod(ResponseFormat=ResponseFormat.Json, UseHttpGet =true)]
         public static List<Libro> ObtenerLibrosAjax()
         {
             string connectionString = WebConfigurationManager.ConnectionStrings["ConexionLibros"].ConnectionString;
             List<Libro> libros = LibroService.ObtenerLibros(connectionString);
             return libros;
         }
+
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = true)]
         public static List<Autor> ObtenerAutores()
         {
             return AutorService.GetAutores();
         }
-        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = true)]
+
+
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet =true)]
         public static List<Editorial> ObtenerEditoriales()
         {
             return EditorialService.ObtenerEditoriales();
         }
+
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet =false)]
+        public static Libro ObtenerLibroPorId(int id_libro_param)
+        {
+            try
+            {
+                return LibroService.GetLibroPorId(id_libro_param);
+            }catch(Exception ex)
+            {
+                throw new Exception("No se pudo obtener el libro");
+            }
+        }
+
+
     }
 }
