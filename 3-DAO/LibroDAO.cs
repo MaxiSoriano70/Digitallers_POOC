@@ -15,7 +15,7 @@ namespace _3_DAO
         {
             Libro libro = new Libro();
             libro.Titulo = "Test Libro";
-            libro.Editorial = "Test Editorial";
+            libro.Editorial.Nombre = "Test Editorial";
             return libro;
         }
 
@@ -33,10 +33,16 @@ namespace _3_DAO
                     while (rd.Read())
                     {
                         Libro libro = new Libro();
+                        Autor autor = new Autor();
+                        Editorial editorial = new Editorial();
                         libro.Id = Convert.ToInt32(rd["id_libro"]);
                         libro.Titulo = rd["titulo"].ToString();
-                        libro.Autor = rd["autor"].ToString();
-                        libro.Editorial = rd["editorial"].ToString();
+                        autor.Nombre = rd["autor"].ToString();
+                        editorial.Nombre = rd["editorial"].ToString();
+                        //libro.Editorial = editorial;
+                        //libro.Autor = autor;
+                        libro.setEditorial(editorial);
+                        libro.setAutor(autor);
                         libros.Add(libro);
                     }
                     return libros;
@@ -52,24 +58,97 @@ namespace _3_DAO
             }
             
         }
-        public static int SeveBook(Libro libro)
+
+        public static int SaveBook(Libro libro)
+        {
+            using(SqlConnection conexion = new SqlConnection(StringConexion))
+            {
+                try
+                {
+                    string query = "insert into libros(titulo,id_autor,id_editorial) values " +
+                        "(@titulo,@autor,@editorial)";
+
+                    SqlCommand cmb = new SqlCommand(query,conexion);
+                    
+                    SqlParameter paramTitulo = new SqlParameter("@titulo", libro.Titulo);
+                    SqlParameter paramAutor = new SqlParameter("@autor", libro.Autor.Id);
+                    SqlParameter paramEditorial = new SqlParameter("@editorial", libro.Editorial.Id_editorial);
+
+                    cmb.Parameters.Add(paramTitulo);
+                    cmb.Parameters.Add(paramAutor);
+                    cmb.Parameters.Add(paramEditorial);
+
+                    conexion.Open();
+                    return cmb.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    conexion.Close();
+                }
+            }
+        }
+
+        public static Libro GetLibroPorId(int id_libro)
+        {
+            using(SqlConnection conexion = new SqlConnection(StringConexion))
+            {
+                Libro libro = new Libro();
+                try
+                {
+                    string query = "select id_libro,titulo,id_autor,id_editorial from libros where id_libro = @id";
+                    SqlCommand cmb = new SqlCommand(query, conexion);
+                    SqlParameter param_id = new SqlParameter("@id", id_libro);
+                    cmb.Parameters.Add(param_id);
+                    conexion.Open();
+                    SqlDataReader rd = cmb.ExecuteReader();
+                    while (rd.Read())
+                    {
+                        Editorial ed = new Editorial();
+                        Autor au = new Autor();
+                        libro.Id = Convert.ToInt32(rd["id_libro"]);
+                        libro.Titulo = rd["titulo"].ToString();
+                        au.Id = Convert.ToInt32(rd["id_autor"]);
+                        ed.Id_editorial = Convert.ToInt32(rd["id_editorial"]);
+                        libro.Autor = au;
+                        libro.Editorial = ed;
+                    }
+                    return libro;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    conexion.Close();
+                }
+            }
+        }
+        public static int UpdateBook(Libro libro)
         {
             using (SqlConnection conexion = new SqlConnection(StringConexion))
             {
                 try
                 {
-                    string query = "insert into libros(titulo,id_autor,id_editorial) values" + "(@titulo,@autor,@editorial)";
+                    string query = "update libros set titulo = @titulo, id_autor = @autor, id_editorial = @editorial where id_libro = @Id";
+
                     SqlCommand cmb = new SqlCommand(query, conexion);
-                    //REMPLAZA
+
                     SqlParameter paramTitulo = new SqlParameter("@titulo", libro.Titulo);
-                    SqlParameter paramAutor = new SqlParameter("@autor", libro.Autor);
-                    SqlParameter paramEditorial = new SqlParameter("@editorial", libro.Editorial);
-                    //AGREGA
+                    SqlParameter paramAutor = new SqlParameter("@autor", libro.Autor.Id);
+                    SqlParameter paramEditorial = new SqlParameter("@editorial", libro.Editorial.Id_editorial);
+                    SqlParameter paramIdLibro = new SqlParameter("@Id", libro.Id);
+
                     cmb.Parameters.Add(paramTitulo);
                     cmb.Parameters.Add(paramAutor);
                     cmb.Parameters.Add(paramEditorial);
+                    cmb.Parameters.Add(paramIdLibro);
+
                     conexion.Open();
-                    //ANALIZAMOS SI SE REALIZO LA QUERY CORRECTAMENTE si inserta correctamente 1 sino 0
                     return cmb.ExecuteNonQuery();
                 }
                 catch (Exception ex)

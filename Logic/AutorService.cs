@@ -15,8 +15,7 @@ namespace Logic
             try
             {
                 return AutorDAO.ObtenerAutores();
-            }
-            catch(Exception ex)
+            }catch(Exception ex)
             {
                 throw ex;
             }

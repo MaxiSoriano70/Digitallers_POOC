@@ -11,6 +11,7 @@ namespace _3_DAO
     public class EditorialDAO
     {
         private static string StringConexion = Properties.Settings.Default.ConexionLibros;
+        
         private static SqlConnection objConexion = null;
         public static List<Editorial> ObtenerEditoriales()
         {
@@ -18,12 +19,12 @@ namespace _3_DAO
             try
             {
                 objConexion = new SqlConnection(StringConexion);
-            }
-            catch(Exception ex)
+            }catch(Exception ex)
             {
-                throw new Exception("Se ha producido un error en la conexion" + Environment.NewLine + ex.Message);
+                throw new Exception("Se ha producido un error en la conexión" + Environment.NewLine + ex.Message);
             }
-            SqlCommand cmd = new SqlCommand("select id_editorial,nombre from editoriales",objConexion);
+
+            SqlCommand cmd = new SqlCommand("select id_editorial,nombre from editoriales", objConexion);
             SqlDataReader rd = null;
             try
             {
@@ -35,18 +36,18 @@ namespace _3_DAO
                     ed.Id_editorial = Convert.ToInt32(rd["id_editorial"]);
                     ed.Nombre = rd["nombre"].ToString();
                     editoriales.Add(ed);
+
                 }
                 return editoriales;
-            }
-            catch(Exception ex)
+            }catch(Exception ex)
             {
-                throw new Exception("Se ha producido un error en la conexion" + Environment.NewLine + ex.Message);
+                throw new Exception("Se ha producido un error en la tabla editoriales" + Environment.NewLine + ex.Message);
             }
             finally
             {
                 objConexion.Close();
             }
-
         }
     }
 }
+

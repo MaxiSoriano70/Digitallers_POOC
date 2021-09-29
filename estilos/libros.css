@@ -44,6 +44,6 @@
     width: 25%;
 }
 
-    .contact-form button:focus {
-        box-shadow: none;
-    }
+.contact-form button:focus {
+    box-shadow: none;
+}

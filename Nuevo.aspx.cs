@@ -13,10 +13,12 @@ namespace Capas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
             RellenarComboAutores();
             RellenarComboEditoriales();
             mensaje_error.Text = "";
         }
+
         protected void RellenarComboAutores()
         {
             List<Autor> autores = null;
@@ -27,24 +29,14 @@ namespace Capas
                 cmb_autores.DataTextField = "Nombre";
                 cmb_autores.DataValueField = "Id";
                 cmb_autores.SelectedValue = "Id";
+
                 cmb_autores.DataBind();
-            }
-            catch(Exception ex)
+            }catch(Exception ex)
             {
                 mensaje_error.Text = ex.Message;
             }
-            /*Autor au1 = new Autor();
-            Autor au2 = new Autor();
-
-            au1.Id = 1;
-            au1.Nombre = "Yesica Sulca";
-
-            au2.Id = 2;
-            au2.Nombre = "Karen Dominguez";
-
-            autores.Add(au1);
-            autores.Add(au2);*/
         }
+
         protected void RellenarComboEditoriales()
         {
             List<Editorial> editoriales = null;
@@ -54,26 +46,25 @@ namespace Capas
                 cmb_editoriales.DataSource = editoriales;
                 cmb_editoriales.DataTextField = "Nombre";
                 cmb_editoriales.DataValueField = "Id_editorial";
-                cmb_autores.SelectedValue = "Id_editorial";
+                cmb_editoriales.SelectedValue = "Id_editorial";
                 cmb_editoriales.DataBind();
-            }
-            catch(Exception ex)
+            }catch(Exception ex)
             {
                 mensaje_error.Text = ex.Message;
             }
         }
+
         protected void EnvioForm(object sender, EventArgs e)
         {
             try
             {
                 Libro libro = new Libro();
                 libro.Titulo = txt_titulo.Text.Trim();
-                libro.Editorial = cmb_editoriales.SelectedValue;
-                libro.Autor = cmb_autores.SelectedValue;
+                libro.Editorial.Id_editorial = Convert.ToInt32(cmb_editoriales.SelectedValue);
+                libro.Autor.Id = Convert.ToInt32(cmb_autores.SelectedValue);
                 LibroService.NuevoLibro(libro);
                 Server.Transfer("Inicio.aspx");
-            }
-            catch(Exception ex) 
+            }catch(Exception ex)
             {
                 mensaje_error.Text = ex.Message;
             }

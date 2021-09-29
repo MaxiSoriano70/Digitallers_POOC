@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Capas.Master" AutoEventWireup="true" CodeBehind="ListadoAjax.aspx.cs" Inherits="Capas.ListadoAjax" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -7,13 +8,12 @@
         <thead>
             <tr>
                 <th>#</th>
-                <th>Titulo</th>
+                <th>Título</th>
                 <th>Autor</th>
                 <th>Editorial</th>
             </tr>
         </thead>
-        <tbody id="bodyTable">
-
+        <tbody id="bodyTabla">
         </tbody>
     </table>
     <!-- Modal -->
@@ -40,7 +40,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                    <button type="button" class="btn btn-primary" id="btn-guardar">Guardar Cambios</button>
                 </div>
             </div>
         </div>
