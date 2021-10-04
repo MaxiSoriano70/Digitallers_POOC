@@ -15,29 +15,33 @@ function obtenerLibros() {
         .fail(setearError)
 }
 
-function setearTabla(response)
-{
-    console.log(response.d);
+function setearTabla(response) {
+    $("#bodyTabla").html("");
     if (response.d.length > 0) {
         $.each(response.d, function (key, value) {
             $("#bodyTabla").append(
-                "<tr onclick='mostrarModal("+ value.Id +")'>" +
+                "<tr onclick='mostrarModal(" + value.Id + ")'>" +
                 "<td>" + value.Id + "</td>" +
-                "<td>"+ value.Titulo +"</td>" +
-                "<td>" + value.Autor.Nombre +"</td>" +
-                "<td>"+ value.Editorial.Nombre +"</td>" +
+                "<td>" + value.Titulo + "</td>" +
+                "<td>" + value.Autor.Nombre + "</td>" +
+                "<td>" + value.Editorial.Nombre + "</td>" +
                 "</tr>"
             );
         })
     }
 }
 
+var myModal = new bootstrap.Modal(document.getElementById('modalModificar'), {
+    keyboard: false
+})
 function mostrarModal(id_libro) {
     console.log("Id del libro elegido: " + id_libro);
-    var myModal = new bootstrap.Modal(document.getElementById('modalModificar'), {
-        keyboard: false
-    })
-    myModal.toggle();
+    $(".alert-danger").addClass('d-none');
+    $(".alert-danger").text("");
+    $(".alert-success").addClass("d-none");
+    $(".alert-success").text("");
+    myModal.toggle()
+    $("#Id_libro_elegido").val(id_libro);
     getDatoLibroElegido(id_libro);
 }
 
@@ -104,10 +108,10 @@ function getDatoLibroElegido(id_libro) {
             cargarAutoresModal();
             cargarEditorialesModal();
             $("#modal_titulo").val(response.d.Titulo);
-            setTimeout(function (response) {
-                $("#select_autor").val(response.d.Autor.Id);//DUDA
-                $("#select_editorial").val(response.d.Editorial.Id_editorial);//DUDA
-            },250)
+            setTimeout(function () {
+                $("#select_autor").val(response.d.Autor.Id);
+                $("#select_editorial").val(response.d.Editorial.Id_editorial);
+            }, 250)
         },
         error: function (error) {
             console.log(error);
@@ -130,9 +134,44 @@ function setearError(error)
     console.log(error);
 }
 
-var i =1;
 $("#btn_guardar").click(function () {
-    console.log(i + " Boton guardar presionado");
-    i++;
+    let objLibro = {
+        libro: {
+            Id: $("#Id_libro_elegido").val(),
+            Titulo: $("#modal_titulo").val(),
+            Editorial: {
+                Id_editorial: $("#select_editorial").val()
+            },
+            Autor: {
+                Id: $("#select_autor").val()
+            }
+        }
+    }
+    const libroString = JSON.stringify(objLibro);
+    $.ajax({
+        type: 'POST',
+        url: 'ListadoAjax.aspx/ActualizarLibro',
+        data: libroString,
+        contentType: 'application/json',
+        dataType: 'json',
+        success: function (respuesta) {
+            const resp = respuesta.d;
+            if (resp !== 'Ok') {
+                $(".alert-danger").removeClass('d-none');
+                $(".alert-danger").text(resp);
+            } else {
+                $(".alert-success").removeClass('d-none');
+                $(".alert-success").text("El libro fue modificado correctamente");
+                myModal.hide();
+                obtenerLibros();
+                setTimeout(function () {
+                    $(".alert-success").addClass("d-none");
+                }, 2000);
+            }
+        },
+        error: function (error) {
+            $(".alert-danger").removeClass('d-none');
+            $(".alert-danger").text("No se pudo realizar la consulta, intente mas tarde");
+        }
+    })
 })
-// Index.aspx   - www.loquesea.com 

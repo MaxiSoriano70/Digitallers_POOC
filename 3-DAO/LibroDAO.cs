@@ -149,7 +149,7 @@ namespace _3_DAO
                     cmb.Parameters.Add(paramIdLibro);
 
                     conexion.Open();
-                    return cmb.ExecuteNonQuery();
+                    return cmb.ExecuteNonQuery();//EJECUTA LA QUERY
                 }
                 catch (Exception ex)
                 {

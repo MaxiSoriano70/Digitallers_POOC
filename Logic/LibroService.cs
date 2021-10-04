@@ -74,5 +74,20 @@ namespace Logic
                 throw ex;
             }
         }
+        public static int UpdateLibro(Libro libro)
+        {
+            try
+            {
+                if (libro.Titulo.Length < 1)
+                {
+                    throw new Exception("El libro debe tener un Titulo");
+                }
+                return LibroDAO.UpdateBook(libro);
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

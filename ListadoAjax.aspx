@@ -4,6 +4,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Listado</h1>
+    <div class="mb-3">
+        <div class="alert alert-success d-none" role="alert">
+                               
+        </div>
+    </div>
     <table class="table table-bordered table-hover">
         <thead>
             <tr>
@@ -24,7 +29,13 @@
                     <h5 class="modal-title" id="exampleModalLabel">Actualizar Libro</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                <input type="hidden" id="Id_libro_elegido" value="" />
                 <div class="modal-body">
+                    <div class="mb-3">
+                        <div class="alert alert-danger d-none" role="alert">
+                            
+                        </div>
+                    </div>
                     <div class="mb-3">
                         <label for="Titulo" class="col-form-label">Título:</label>
                         <input type="text" class="form-control" id="modal_titulo" name="titulo" />
@@ -40,7 +51,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary" id="btn-guardar">Guardar Cambios</button>
+                    <button type="button" class="btn btn-primary" id="btn_guardar">Guardar Cambios</button>
                 </div>
             </div>
         </div>
