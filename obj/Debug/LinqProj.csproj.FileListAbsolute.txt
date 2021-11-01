@@ -1,0 +1,7 @@
+C:\Users\cudve\Desktop\Digitallers\Linq\LinqProj\bin\Debug\LinqProj.exe.config
+C:\Users\cudve\Desktop\Digitallers\Linq\LinqProj\bin\Debug\LinqProj.exe
+C:\Users\cudve\Desktop\Digitallers\Linq\LinqProj\bin\Debug\LinqProj.pdb
+C:\Users\cudve\Desktop\Digitallers\Linq\LinqProj\obj\Debug\LinqProj.csproj.AssemblyReference.cache
+C:\Users\cudve\Desktop\Digitallers\Linq\LinqProj\obj\Debug\LinqProj.csproj.CoreCompileInputs.cache
+C:\Users\cudve\Desktop\Digitallers\Linq\LinqProj\obj\Debug\LinqProj.exe
+C:\Users\cudve\Desktop\Digitallers\Linq\LinqProj\obj\Debug\LinqProj.pdb
